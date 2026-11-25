@@ -1,5 +1,3 @@
-mkdir -p .github/workflows
-cat << 'EOF' > .github/workflows/ci.yml
 name: CI pipeline data
 
 on:
@@ -38,4 +36,3 @@ jobs:
 
       - name: Construire l'image Docker
         run: docker build -t pipeline-data .
-EOF
